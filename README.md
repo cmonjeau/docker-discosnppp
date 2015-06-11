@@ -8,6 +8,10 @@ The software is composed by two modules. First module, kissnp2, detects SNPs fro
 
 git clone https://github.com/cmonjeau/docker-discosnppp.git
 
+### Enter the directory ###
+
+cd docker-discosnppp
+
 ### Build the dockerfile ###
 
 docker build -t cmonjeau/discosnppp .
