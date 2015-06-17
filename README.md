@@ -24,3 +24,23 @@ docker run -it --rm cmonjeau/discosnppp
 
 docker run -it --rm -v /home/user/discoSNP_data:/data cmonjeau/discosnppp -r "/data/reads_sequence1.fasta.gz /data/reads_sequence2.fasta.gz" -G /data/reference_genome.fa -p /data/results/discoRes
 
+### Run DiscoSNP++ using Godocker (https://godocker.genouest.org)
+
+Create a new job with these parameters:
+
+"Container image" : cmonjeau/discosnppp
+
+"Command" : 
+
+```
+
+  #!/bin/bash
+
+  # command line example 
+  /opt/DiscoSNP++-2.1.7-Source/run_discoSnp++.sh -r "$GODOCKER_HOME/discoSNP_data/reads_sequance1.fasta.gz $GODOCKER_HOME/discoSNP_data/reads_sequence2.fasta.gz" -G $GODOCKER_HOME/discoSNP_data/coli.fasta -p $GODOCKER_HOME/result
+
+```
+
+"Mount volumes" : home(rw)
+
+
