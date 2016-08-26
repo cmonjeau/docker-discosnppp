@@ -37,7 +37,7 @@ Create a new job with these parameters:
 #!/bin/bash
 
 # command line example (adapt with your data)
-/opt/DiscoSNP++-2.1.7-Source/run_discoSnp++.sh -r "$GODOCKER_HOME/discoSNP_data/reads_sequence1.fasta.gz $GODOCKER_HOME/discoSNP_data/reads_sequence2.fasta.gz" -G $GODOCKER_HOME/discoSNP_data/coli.fasta -p $GODOCKER_HOME/discoSNP_data/result
+/opt/DiscoSNP++-2.2.9-Source/run_discoSnp++.sh -r "$GODOCKER_HOME/discoSNP_data/reads_sequence1.fasta.gz $GODOCKER_HOME/discoSNP_data/reads_sequence2.fasta.gz" -G $GODOCKER_HOME/discoSNP_data/coli.fasta -p $GODOCKER_HOME/discoSNP_data/result
 
 ```
 
